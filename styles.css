@@ -123,5 +123,21 @@ footer .social-media img {
 #banner-image {
     width: 400px; /* Limit the width to 400px */
     height: auto; /* Maintain aspect ratio */
-    padding-top: 20px;
+    padding-top: 30px;
+}
+
+#banner-image {
+    width: 400px; /* Set the default width */
+}
+
+/* Media query for screens with a max width of 600px (typical mobile devices) */
+@media screen and (max-width: 600px) {
+    #banner-image {
+        width: 300px; /* Set the width to 300px on mobile screens */
+    }
+}
+
+.divider {
+    border-top: 1px solid #ddd; /* Line color */
+    margin: 10px 0; /* Padding above and below the line */
 }
