@@ -150,10 +150,12 @@ document.getElementById('generate-button').addEventListener('click', function() 
     } while (chosenPrompt === lastPrompt);
 
     lastPrompt = chosenPrompt;
+    
 
     // Show the prompt display and include the category
     // Added an extra line break between the category and the prompt
     const promptDisplay = document.getElementById('prompt-display');
     promptDisplay.style.display = 'block';
-    promptDisplay.innerHTML = `<strong>${chosenPrompt.category}</strong><br><br>${chosenPrompt.prompt}<br>${chosenPrompt.example}`;
+    promptDisplay.innerHTML = `<strong>${chosenPrompt.category}</strong><br><br>${chosenPrompt.prompt}<div class="divider"></div>${chosenPrompt.example}`;
+
 });
