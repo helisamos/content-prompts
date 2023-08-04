@@ -107,12 +107,13 @@ footer .social-media img {
 
 #generate-button {
     /* ... existing styles ... */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+    box-shadow: 0 0 10px #FFC167; /* Add subtle glow effect */
+    transition: box-shadow 0.3s ease; /* Optional: add transition for a smooth effect */
 }
 
 #generate-button:hover {
-    /* ... existing styles ... */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow on hover */
+    /* Increase the glow effect on hover, if desired */
+    box-shadow: 0 0 15px #FFC167;
 }
 
 #banner-container {
